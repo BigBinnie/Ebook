@@ -1,0 +1,27 @@
+<!--pages/profile/profile.wxml-->
+<view class="wrapper">
+  <view>
+    <view class='image'>
+      <van-image width="15rem" height="15rem" src="{{user.icon.iconBase64}}"/>
+    </view>
+    <view>
+      <van-panel title="{{user.name}}" >
+        <view style="margin-left:5%;width:90%;margin-top:0.3rem">
+          <text class="detail">UserId:{{user.userId}}</text>
+        </view>
+        <view style="margin-left:5%;width:90%;margin-top:0.3rem">
+          <text class="detail">Nickname:{{user.nickname}}</text>
+        </view>
+        <view style="margin-left:5%;width:90%;margin-top:0.3rem">
+          <text class="detail">Adderss:{{user.address}}</text>
+        </view>
+        <view style="margin-left:5%;width:90%;margin-top:0.3rem">
+        <text class="detail">Tel:{{user.tel}}</text>
+        </view>
+        <view style="width:15rem; height:6rem;margin-top:1rem;margin-left:2.5rem;">
+          <button bindtap="bindViewTap" color="#4F94CD" round type="primary" >切换账号</button>
+        </view>
+      </van-panel>
+    </view>
+  </view>
+</view>

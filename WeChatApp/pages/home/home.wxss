@@ -1,0 +1,22 @@
+/* pages/home/home.wxss */
+@keyframes around {
+  from {
+   margin-left: 100%;
+  }
+  to {
+   margin-left: var(--marqueeWidth--);
+  }
+ }
+ .price{
+  font-size:35rpx;
+  font-weight:500;
+  font-family:SimSun;
+  color: #FF3030;
+
+}
+.name{
+  font-size:30rpx;
+  font-weight:400;
+  font-family:STFangsong;
+  text-align:center;
+}

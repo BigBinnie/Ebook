@@ -1,0 +1,41 @@
+.user-detail{
+    margin-top: 60px;
+    height:400px;
+    overflow: hidden;
+}
+
+.user-detail .user-icon{
+    float:left;
+    vertical-align: middle;
+}
+
+.user-detail .profile-descriptions{
+    margin-top:10px;
+    margin-left:20px;
+    padding-left: 50px;
+    float:left;
+    width:330px;
+}
+
+.ant-descriptions-item-content{
+    font-size:14px !important;
+    font-family:"Microsoft YaHei" !important;
+}
+
+.book-detail .descriptions .title .ant-descriptions-item-content{
+    font-size:22px !important;
+    font-family:"Microsoft YaHei" !important;
+    font-weight: bold !important;
+
+}
+
+.description-item{
+    font-size:22px;
+    font-family:"Microsoft YaHei";
+    font-weight: bold;
+}
+.button-groups{
+    margin-top:4%;
+    height:10%;
+    text-align:center;
+}

@@ -1,0 +1,12 @@
+/* pages/profile/profile.wxss */
+.image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow: greenyellow;
+}
+.detail{
+  font-size:40rpx;
+  font-weight:500;
+  font-family:SimSun;
+}

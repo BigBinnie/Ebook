@@ -1,0 +1,25 @@
+<!--pages/cart/cart.wxml-->
+<view>
+	<view style="margin-bottom:60px;">
+		<block wx:for="{{carts}}" wx:for-item="cart">
+			<van-swipe-cell right-width="{{ 65 }}" async-close bind:close="onClose" data-id="{{cart.cartId}}">
+				<van-card num="{{cart.amount}}" tag="热售中" price="{{cart.book.price}}" desc="{{cart.book.author}}" title="{{cart.book.name}}" thumb="{{cart.book.image}}">
+					<view slot="footer">
+						<button class="buy_button" round type="primary" size="small" bindtap="onClickButtonOrder" data-bookId="{{cart.book.bookId}}">购买</button>
+					</view>
+				</van-card>
+				<view slot="right">
+					删除
+				</view>
+			</van-swipe-cell>
+		</block>
+	</view>
+
+	<van-goods-action>
+		<van-goods-action-icon icon="chat-o" text="客服" bind:click="onClickIcon" />
+		<van-goods-action-icon icon="shop-o" text="店铺" bind:click="onClickMarket" />
+		<van-goods-action-button text="清空购物车" bind:click="onClickClearCart" />
+	</van-goods-action>
+
+	<van-dialog id="van-dialog" />
+</view>

@@ -1,0 +1,19 @@
+/* pages/bookdetail/bookdetail.wxss */
+.image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.price{
+  font-size:40rpx;
+  font-weight:500;
+  font-family:SimSun;
+  color: #FF3030;
+
+}
+.description{
+  font-size:32rpx;
+  font-weight:400;
+  font-family:SimSun;
+  text-align:center;
+}

@@ -1,0 +1,26 @@
+/* pages/cart/cart.wxss */
+
+.van-swipe-cell__left,
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: 44px;
+  font-size: 15px;
+  line-height: 110px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}
+.buy_button{
+  display: flex;
+  flex-direction: column;
+  width: 150rpx;
+  height: 60rpx;
+  font-size: 10px;
+  border-radius: 70rpx;
+  background-color: rgb(186, 218, 23);
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 40rpx; */
+  margin-left: 550rpx;
+}

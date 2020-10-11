@@ -1,0 +1,24 @@
+<!--pages/bookdetail/bookdetail.wxml-->
+<view class="wrapper">
+  <view>
+    <view class='image'>
+      <van-image width="15rem" height="15rem" src="{{book.image}}"/>
+    </view>
+    <view>
+      <van-panel title="{{book.name}}" status="库存：{{book.inventory}}">
+        <view style="margin-left:5%;width:90%;margin-top:0.2rem">
+          <text class="price">¥{{book.price}}</text>
+        </view>
+        <view style="margin-left:5%;width:90%">
+        <text class="description">{{book.description}}</text>
+        </view>
+      </van-panel>
+    </view>
+  </view>
+	<van-goods-action fixed="true">
+		<van-goods-action-icon icon="chat-o" text="客服" dot bind:click="onClickIcon" />
+		<van-goods-action-icon icon="shop-o" text="店铺" bind:click="onClickMarket" />
+		<van-goods-action-button text="加入购物车" color="#4F94CD" type="warning" bind:click="onClickButtonCart" />
+		<van-goods-action-button text="立即购买" color="#B0E2FF" bind:click="onClickButtonOrder" />
+	</van-goods-action>
+</view>

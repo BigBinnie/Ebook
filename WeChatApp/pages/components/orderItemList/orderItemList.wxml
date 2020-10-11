@@ -1,0 +1,5 @@
+<!--pages/components/orderItemList/orderItemList.wxml-->
+<block wx:for="{{orderItems}}" wx:for-item="orderItem">
+          <van-card num="{{orderItem.amount}}" price="{{orderItem.book.price}}" desc="{{orderItem.book.author}}" title="{{orderItem.book.name}}" thumb="{{orderItem.book.image}}">
+          </van-card>
+</block>

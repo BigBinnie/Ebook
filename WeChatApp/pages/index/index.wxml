@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container" style="background-image: url('../assets/login2.jpg')">
+  <view>
+  <van-image round width="5rem" height="5rem" src="https://i.loli.net/2020/05/17/KsjY2NkVJH3qPmD.jpg"/>
+  </view>
+  <view class="userinfo" style="margin: 1rem 0 " >
+    <van-cell-group>
+      <van-field bindblur="bindNameInput" left-icon="manager" placeholder="请输入用户名"/>
+      <van-field bindblur="bindPasswordInput" password="true" left-icon="closed-eye"  placeholder="请输入密码" error-message="{{errorMessage}}" border= true />
+    </van-cell-group>
+  </view>
+  <view style="width:13rem; height:6rem; margin: 4rem 0 " >
+      <van-button bindtap="bindViewTap" color="#4F94CD" round type="primary" class="login" block>登录</van-button>
+  </view>
+</view>
